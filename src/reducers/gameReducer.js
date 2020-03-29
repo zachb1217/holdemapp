@@ -14,6 +14,10 @@ export default (state = Immutable.Map(defaultState), action) => {
        }
        case actions.dealCard: {
          let deck = state.get('deck');
+         if (deck.length == 0) {
+           return state;
+         }
+
          let topCard = deck.pop();
          let tableCards = state.get('tableCards');
          tableCards.push(topCard);
