@@ -1,6 +1,7 @@
 export default {
   startGame: 'START_GAME',
   generateDeck: 'GENERATE_DECK',
-  dealCard: 'DEAL_CARD',
-
+  dealCards: 'DEAL_CARDS',
+  dealHands: 'DEAL_HANDS',
+  addPlayer: 'ADD_PLAYER'
 };

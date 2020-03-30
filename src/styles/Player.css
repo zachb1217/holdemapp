@@ -1,0 +1,16 @@
+.Player-Section {
+    min-height: 45vh;
+    justify-content: center;
+    text-align: center;
+    background-color: #282c34;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+}
+
+.One-Player {
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: center;
+  display: inline-block;
+}

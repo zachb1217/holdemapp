@@ -1,8 +1,8 @@
 .Table {
-      min-height: 90vh;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-   }
-
+    min-height: 50vh;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: url('../resources/poker-table-background.jpg');
+}

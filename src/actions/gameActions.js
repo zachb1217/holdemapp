@@ -2,7 +2,12 @@ import actions from '../constants/actionTypes';
 
 export const startGame = () => {
   return (dispatch) => {
+    dispatch(addPlayer('zac'));
+    dispatch(addPlayer('zacc'));
+    dispatch(addPlayer('zuck'));
+    dispatch(addPlayer('bill'));
     dispatch(generateDeck());
+    dispatch(dealHands());
   };
 }
 export const generateDeck = () => {
@@ -11,8 +16,22 @@ export const generateDeck = () => {
   }
 }
 
-export const dealCard = () => {
+export const dealHands = () => {
   return {
-    type: actions.dealCard
+    type: actions.dealHands
+  }
+}
+
+export const dealCards = (amount) => {
+  return {
+    type: actions.dealCards,
+    payload: amount
+  }
+}
+
+export const addPlayer = (playerName) => {
+  return {
+    type: actions.addPlayer,
+    payload: playerName
   }
 }

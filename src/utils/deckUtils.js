@@ -15,6 +15,22 @@ const shuffle = (deck) => {
   return shuffledDeck;
 }
 
+
+export const deal = (deck, target, amount) => {
+   let newDeck = deck.slice();
+   let newTarget = target.slice();
+   let ctr = amount;
+   while (ctr > 0) {
+     let topCard = newDeck.pop();
+     newTarget.push(topCard);
+     ctr--;
+   }
+   return {
+     deck: newDeck,
+     target: newTarget
+   }
+}
+
 const randomInt = (max) => {
   return Math.floor(Math.random() * max);
 }

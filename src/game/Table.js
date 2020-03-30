@@ -6,9 +6,8 @@ import {generateImg} from '../utils/cardUtils';
 
 export class Table extends React.Component {
   render() {
-
-    return <div>
-    <div className='Table'>
+    return <div className='Table'>
+    <div>
     {
       _.map(this.props.cards, generateImg)
     }
