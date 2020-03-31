@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   Clubs: 'Clubs',
   Diamonds: 'Diamonds',
   Hearts: 'Hearts',
