@@ -1,7 +1,7 @@
 import suits from './suits';
 import values from './values';
 
-export default = {
+export default {
   twoSpades: {
     value: values.Two,
     suit: suits.Spades,
