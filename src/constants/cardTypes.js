@@ -1,7 +1,7 @@
-const suits = require('./suits');
-const values = require('./values');
+import suits from './suits';
+import values from './values';
 
-module.exports = {
+export default = {
   twoSpades: {
     value: values.Two,
     suit: suits.Spades,

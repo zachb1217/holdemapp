@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   highCard: 1,
   pair: 2,
   twoPair: 3,

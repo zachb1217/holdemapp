@@ -1,7 +1,7 @@
-const cardTypes = require('../constants/cardTypes');
-const suits = require('../constants/suits');
-const handTypes = require('../constants/handTypes');
-const _ = require('lodash');
+import cardTypes from '../constants/cardTypes';
+import suits from '../constants/suits';
+import handTypes from '../constants/handTypes';
+import _ from 'lodash';
 
 const determineHighCard = (cards) => {
   cards.sort((x,y) => x.value - y.value);
