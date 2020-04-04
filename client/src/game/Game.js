@@ -10,10 +10,26 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.props.startGame();
+    this.state = {
+      serverData: {}
+    }
+    this.serverTest();
   }
+
+  serverTest = () => {
+    fetch('/flower')
+    .then(response => response.json())
+    .then(data => {
+        this.setState(
+            {serverData: data}
+        );
+    });
+  }
+
   render() {
     return <div>
       <button onClick={this.props.dealCard}>DEAL</button>
+      <div>{this.state.serverData.name}</div>
       <Table cards={this.props.tableCards}/>
       <hr className='divider'/>
       <PlayerSection players={this.props.players}/>

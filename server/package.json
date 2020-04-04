@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server package",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon --exec babel-node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachb1217/holdemapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachb1217/holdemapp/issues"
+  },
+  "homepage": "https://github.com/zachb1217/holdemapp#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
